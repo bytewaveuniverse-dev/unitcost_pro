@@ -19,4 +19,6 @@ Route::middleware(['auth'])->group(function () {
     Volt::route('settings/appearance', 'settings.appearance')->name('settings.appearance');
 });
 
+Route::livewire('/configuracion', 'pages::configuracion.index')->name('configuraciones');
+
 require __DIR__.'/auth.php';

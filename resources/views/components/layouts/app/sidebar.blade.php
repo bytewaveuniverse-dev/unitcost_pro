@@ -17,6 +17,14 @@
                 </flux:navlist.group>
             </flux:navlist>
 
+            <!-- Menu configuraciones -->
+             <flux:navlist variant="outline">
+                <flux:navlist.group heading="Platform" class="grid">
+                    <flux:navlist.item icon="home" :href="route('configuraciones')" :current="request()->routeIs('configuraciones')" wire:navigate>Configuraciones</flux:navlist.item>
+                </flux:navlist.group>
+            </flux:navlist>
+            
+
             <flux:spacer />
 
             <flux:navlist variant="outline">
